@@ -23,9 +23,10 @@ const displayData = () => {
   });
 };
 
-document.querySelector('.form-data').addEventListener('submit', (e) => {
+document.querySelector('.form-data').addEventListener('submit', async (e) => {
   e.preventDefault();
-  createUserScore({ user: username.value, score: userScore.value });
+  const userDataObj = { user: username.value, score: userScore.value };
+  await createUserScore(userDataObj);
   username.value = '';
   userScore.value = '';
 });
