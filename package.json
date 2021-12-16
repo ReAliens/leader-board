@@ -1,7 +1,7 @@
 {
   "name": "leader-board",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is leaderboard app getting daily user scores",
   "private": true,
   "main": "index.js",
   "scripts": {

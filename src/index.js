@@ -1,4 +1,4 @@
 import './styles.css';
-import displayData from './utils/displayData.js';
+import displayData from './utils/dataDisplay.js';
 
 window.onload = displayData;
