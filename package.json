@@ -1,7 +1,7 @@
 {
   "name": "leader-board",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is leaderboard app getting daily user scores",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,7 @@
     "webpack": "^5.65.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.5",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.5.1",
     "eslint": "^7.32.0",
