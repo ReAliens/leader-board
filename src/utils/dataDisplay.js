@@ -23,7 +23,9 @@ const displayData = () => {
 
 document.querySelector('.form-data').addEventListener('submit', async (e) => {
   e.preventDefault();
-  const userDataObj = { user: username?.value, score: userScore?.value };
+  const nameInput = username?.value;
+  const scoreInput = userScore?.value;
+  const userDataObj = { user: nameInput, score: scoreInput };
   await createUserScore(userDataObj);
   username.value = '';
   userScore.value = '';
