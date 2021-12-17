@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  background-color: aliceblue;
+}
+
+header h1 {
+  background-color: aliceblue;
+  overflow: hidden;
+  border-right: 0.15em solid blue;
+  white-space: nowrap;
+  letter-spacing: 0.35em;
+  animation:
+    typing 3.5s steps(30, end) infinite,
+    cursor-blink 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 20%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes cursor-blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: blue;
+  }
+}
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 50fr 50fr;
+}
+
+.scores {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.scores-header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+button {
+  background-color: mediumblue;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.scores-header button {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 5px 10px 5px gray;
+}
+
+.scores-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scores-table {
+  display: grid;
+  width: 65%;
+  height: 400px;
+  overflow-y: auto;
+  grid-template-rows: auto;
+  border: 1px solid black;
+  margin-top: 35px;
+}
+
+.row {
+  width: auto;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.row:nth-child(even) {
+  background-color: lightblue;
+}
+
+.row:nth-child(even) span {
+  background-color: lightblue;
+}
+
+.user-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-data input {
+  width: 57%;
+  height: 30px;
+}
+
+.form-data label {
+  margin: 30px 0 0 0;
+}
+
+.form-data button {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 5px 10px 5px gray;
+  margin: 30px 0;
+  align-self: center;
+}
+
+button:hover {
+  background-color: white;
+  color: mediumblue;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightskyblue;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkblue;
+}
