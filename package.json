@@ -5,6 +5,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm ru build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack serve --mode production",
     "start": "webpack serve --open --mode development",
@@ -19,9 +21,10 @@
   "bugs": {
     "url": "https://github.com/ReAliens/leader-board/issues"
   },
-  "homepage": "https://github.com/ReAliens/leader-board#readme",
+  "homepage": "https://realiens.github.io/leader-board/",
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.16.5",
+    "gh-pages": "^3.2.3",
     "lodash": "^4.17.21",
     "webpack": "^5.65.0"
   },
